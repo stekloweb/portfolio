@@ -1,0 +1,79 @@
+/* _webWork.scss */
+
+#web {
+  .alert {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    padding: 10px;
+    max-width: 360px;
+    width: 100%;
+    background-color: $white;
+    border: 5px solid $teal;
+  }
+  .close {
+    font-size: 40px;
+    top: -10px;
+    right: 0px;
+    color: $teal;
+    opacity: 1;
+    background: none;
+    text-shadow: none;
+  }
+
+}
+.site {
+  h3 {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    color: $teal;
+  }
+
+  img {
+    width: 100%;
+    max-width: 360px;
+    background-color: $white;
+    padding: 10px;  
+    display: block;
+    margin: 0 auto; 
+  }
+
+  /* Fade */
+  .site-hover {
+    background: rgba(0, 0, 0, .8);
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    max-width: 360px;
+    height: 100%;
+    opacity: 0;
+    transition: opacity ease-out 0.5s;
+    -webkit-transition: opacity ease-out 0.5s;
+    -moz-transition: opacity ease-out 0.5s;
+    -o-transition: opacity ease-out 0.5s;
+
+    &:hover, &:focus, &:active {
+      opacity: 1;
+    }
+    &:hover .box {
+      bottom: 0px;
+      background-color: $teal;
+    }
+    .box {
+      height: 100px;
+      width: 100%;
+      max-width: 360px;
+      position: absolute; 
+      bottom: -60px;
+      -webkit-transition: bottom  ease-out 200ms;
+      -moz-transition: bottom  ease-out 200ms;
+      -o-transition: bottom  ease-out 200ms;
+      transition: bottom  ease-out 200ms;
+      text-align: center;
+      padding: 20px 0px;
+    }
+  }
+}

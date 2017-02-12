@@ -1,0 +1,44 @@
+/* _footer.scss */
+
+footer {
+  background-color: $teal;
+
+  h2 {
+    color: $black;
+  }
+
+  #social {
+    list-style-type: none;
+    text-align: center;
+    margin:0;
+    padding: 20px 0;
+
+    li {
+      display: inline;
+      padding-right: 60px;
+
+      &:last-child {
+        padding-right: 0px;
+      }
+
+      a {
+        color: $black;
+          transition: color .3s ease-in-out;
+          -webkit-transition: color .3s ease-in-out;
+          -moz-transition: color .3s ease-in-out;
+          -o-transition: color .3s ease-in-out;
+
+        &:hover, &:active {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    color: $black;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,193 @@
+/* _responsive.scss */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .timeline dl dd .circ {
+      left: 430px;
+  }
+  #web .site {
+    .site-hover, .box {
+      width: 293px;
+    }
+    h3 {
+      font-size: 18px;
+    }
+    p {
+      margin: 1em;
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (max-width: 1200px) {
+}
+@media (min-width: 992px) {
+}
+@media (max-width: 991px) {
+  .timeline dl dd .circ {
+      left: 320px;
+  }
+  #web {
+    .site {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 40px;
+      width: 100%;
+      max-width: 360px;
+      position: relative;
+    }
+    hr {
+      display: none;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body .navbar-default .navbar-nav li {
+    margin-right: 25px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #top {
+    #topImage {
+      background-size: 1200px;
+      background-position: 50% 40px;
+      min-height: 500px; 
+    }
+    .spacer2 {
+      padding: 40px 0;
+    }
+    .navbar-default {
+      .navbar-toggle {
+        border: none;
+        background-color: $black;
+        &:hover, &:focus {
+          background-color: $black;
+          border: none;        
+          
+          .icon-bar {
+            height: 3px;
+            border-radius: 0px;
+            background-color: $teal;
+            transition: background-color .3s ease-in;
+            -webkit-transition: background-color .3s ease-in;
+            -moz-transition: background-color .3s ease-in;
+            -o-transition: background-color .3s ease-in;
+            ;
+          }
+        }
+        .icon-bar {
+          background-color: $white;
+          height: 3px;
+          border-radius: 0px;
+          width: 30px;
+        }
+        .bar-margin {
+          margin-top: 5px;
+        }
+      }
+      .navbar-nav {
+        float: left;
+        margin-left: 20px;
+
+        li {
+          padding: 10px 0;
+        }
+      }
+    }
+
+    #bio .btn-default {
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
+
+    #timeline {
+      .timeline dl:before {
+        left: 60px;
+      }
+      .timeline dl dt {
+        margin: 0 0 15px;
+      }
+      .timeline .circ {
+        left: 20px;
+      }
+      .timeline dl dd .time {
+        left: 0;
+      }
+      .timeline dl dd.pos-left .time {
+        padding: 10px 0;
+        margin-left: 0;
+        text-align: left;
+      }
+      .timeline dl dd.pos-left .events {
+        float: right;
+        width: 90%;
+      }
+      .timeline dl dd.pos-left .events:before {
+        left: -12px;
+        border-color: transparent white transparent transparent;
+      }
+      .timeline dl dd.pos-right .time {
+        padding: 10px 0;
+        margin-left: 0;
+        text-align: left;
+      }
+      .timeline dl dd.pos-right .events {
+        float: right;
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  #top {
+     #topImage {
+      background-size: 1200px;
+      background-position: 50% 25px;
+      min-height: 425px; 
+    }
+    #nav {
+      .navbar-toggle {
+        padding: 6px;
+        margin-top: 11px;
+        .icon-bar {
+          height: 2px;
+          width: 20px;
+        }
+      }
+      .navbar-brand {
+        font-size: 16px;
+      }
+    }
+    footer {
+      #social {
+        li { 
+          display: inline-block;
+          padding-right: 20px;
+
+          .fa-5x {
+            font-size: 3em;
+          }
+        }
+      }
+    }
+    #timeline {
+      .timeline dl:before {
+        left: 20px;
+      }
+      dd {
+        margin: 0px;
+      }
+    }
+  }
+}
+

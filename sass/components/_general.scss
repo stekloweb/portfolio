@@ -1,0 +1,68 @@
+/* _general.scss */
+
+body {
+  font-family: $openSans;
+  font-weight: 300;
+  hr {
+    clear: both;
+    border: none;
+  }
+  .spacer1 {
+    padding: 20px 0;
+    margin: 0;
+  }
+  .spacer2 {
+    padding: 92px 0;
+  }
+  a {
+    color: $black;
+  }
+  a:hover {
+    color: $black;
+  } 
+  h2 {
+    font-size: 28px;
+    text-align: center;
+    padding-bottom: 40px;
+    margin: 0;
+  }
+  .gray {
+    background-color: $gray;
+    width: 100%;
+  }
+  .white {
+    background-color: $white;
+    width: 100%;
+  }
+
+   #topImage {
+    min-height: 700px;
+    background:url("../img/portfolio-photo3.jpg") no-repeat fixed;
+    background-position: 50% 20px;
+    background-size: cover;
+  }
+
+  /* Form */
+  #contact {
+    .form-control:focus {
+      border-color: $teal;
+    }
+    #submit {
+      width: 100%;
+      font-size: 18px;
+      font-weight: 700;
+      background-color: $darkGray;
+      color: $black;
+      border: none;
+      padding: 10px;
+
+      &:hover {
+        background-color: $teal;
+        transition: background-color.3s ease-in;
+        -webkit-transition: background-color .3s ease-in;
+        -moz-transition: background-color .3s ease-in;
+        -o-transition: background-color .3s ease-in;
+      }
+    }
+  }
+}

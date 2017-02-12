@@ -1,0 +1,65 @@
+/* _bio.scss */
+
+#bio {
+  h2, h4 {
+    padding-bottom: 20px;
+  }
+  h2 {
+    font-size: 40px;
+    text-align: left;
+  }
+  .fade-in {
+    opacity:0;
+  }
+  h4 {
+    font-size: 20px;
+    line-height: 28px;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+  }
+  h5 {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  p {
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+  }
+  a {
+    font-weight: 600;
+    color: $black;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    &:hover {
+      text-decoration: none;
+      color: $teal;
+      transition: color .3s ease-in;
+      -webkit-transition: color .3s ease-in;
+      -moz-transition: color .3s ease-in;
+      -o-transition: color .3s ease-in;
+    }
+  }
+  .btn-default {
+    font-size: 22px;
+    background-color: $teal;
+    color: $black;
+    border: none;
+    padding: 20px 60px;
+
+    &:hover {
+      color: $white;
+      transition: color .3s ease-in;
+      -webkit-transition: color .3s ease-in;
+      -moz-transition: color .3s ease-in;
+      -o-transition: color .3s ease-in;
+    }
+    i {
+      padding-right: 10px;
+    }
+  }
+}
