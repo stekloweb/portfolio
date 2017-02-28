@@ -10,7 +10,7 @@ footer {
   #social {
     list-style-type: none;
     text-align: center;
-    margin:0;
+    margin: 0;
     padding: 20px 0;
 
     li {
@@ -23,10 +23,7 @@ footer {
 
       a {
         color: $black;
-          transition: color .3s ease-in-out;
-          -webkit-transition: color .3s ease-in-out;
-          -moz-transition: color .3s ease-in-out;
-          -o-transition: color .3s ease-in-out;
+          transition: color $hover-transition;
 
         &:hover, &:active {
           color: $white;

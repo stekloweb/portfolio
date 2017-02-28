@@ -1,75 +1,134 @@
 /* _navigation.scss */
 
 .navbar {
-  margin-bottom: 0;
-  position: fixed;
-  width: 100%;
-  z-index: 9999;
-}
+    margin-bottom: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    background: $black;
+    border: none;
+    border-radius: 0px;
+    padding: 15px 15px;
+    min-height: 0px;
 
-.navbar-default {
-  background: $black;
-  border: none;
-  border-radius: 0px;
-
-  .navbar-brand {
-    font-family: $raleway;
-    letter-spacing: 2px;
-    font-weight: 300;
-    font-size: 20px;
-    color: white;
-    &:hover {
-      color: $teal;
-      transition: color .3s ease-in;
-      -webkit-transition: color .3s ease-in;
-      -moz-transition: color .3s ease-in;
-      -o-transition: color .3s ease-in;
-    }
-    &:focus {
-      color: $teal;
-      background: none;
-    }
-    #lastName {
-      font-weight: 900;
-    }
-  }
-
-  .navbar-nav {
-    float: right;
-    li {
-      margin: 15px 40px 10px 0px;
-      &:last-child {
-        margin-right: 0px;
-      }
-      a {
+    .navbar-logo {
+        font-family: $raleway;
         letter-spacing: 2px;
-        font-size: 16px;
+        font-weight: 300;
+        font-size: 20px;
         color: white;
-        padding: 0 0 7px 0;
+        transition: color $hover-transition;
+        float: left;
+        line-height: 1;
 
         &:hover {
-          color: $teal;
-          transition: color .3s ease-in;
-          -webkit-transition: color .3s ease-in;
-          -moz-transition: color .3s ease-in;
-          -o-transition: color .3s ease-in;
+            color: $teal;
+            text-decoration: none;
         }
-        &:focus {
-          color: $teal;
-          background: none;
-        }
-      }
-    }
-    .active {
-      a, a:focus, a:hover {
-        color: $teal;
-        background: none;
-      }
-    }
-  }
 
-  /* Underline From Center Hover Effect */
-  .hvr-underline-from-center {
+        &:focus {
+            color: $teal;
+            background: none;
+            text-decoration: none;
+        }
+
+        #lastName {
+            font-weight: 900;
+        }
+    }
+}
+
+.navDesktop {
+    float: right;
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin: 0;
+        padding: 0 15px;
+        display: inline-block;
+
+        &:last-child {
+            padding-right: 0px;
+        }
+
+        a {
+            letter-spacing: 2px;
+            font-size: 16px;
+            color: white;
+            padding: 0 0 5px 1px;
+            line-height: 1;
+
+            &:hover {
+                color: $teal;
+                transition: color $hover-transition;
+                text-decoration: none;
+            }
+
+            &:focus {
+                color: $teal;
+                background: none;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .active {
+
+        a, a:focus, a:hover {
+            color: $teal;
+            background: none;
+        }
+    }
+}
+
+.navModal {
+    position: fixed;
+    top: 50px;
+    height: calc(100vh - 50px);
+    width: 100vw;
+    background-color: $black;
+    opacity: 1;
+    overflow: hidden;
+    z-index: 999;
+
+    &-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+
+            a {
+                color: white;
+                font-size: 32px;
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                transition: all $hover-transition;
+
+                &:hover {
+                    text-decoration: none;
+                    color: $black;
+                    background-color: $teal;
+                }
+            }
+        }
+    }
+}
+        
+/* Underline From Center Hover Effect */
+.hvr-underline-from-center {
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: translateZ(0);
@@ -79,8 +138,9 @@
     backface-visibility: hidden;
     position: relative;
     overflow: hidden;
-  }
-  .hvr-underline-from-center:before {
+}
+
+.hvr-underline-from-center:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -95,10 +155,11 @@
     transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-  }
-  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
-    left: 0;
-    right: 0;
-  }
 }
 
+.hvr-underline-from-center:hover:before, 
+.hvr-underline-from-center:focus:before, 
+.hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+}

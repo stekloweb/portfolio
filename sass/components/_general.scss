@@ -1,68 +1,163 @@
 /* _general.scss */
 
 body {
-  font-family: $openSans;
-  font-weight: 300;
-  hr {
-    clear: both;
-    border: none;
-  }
-  .spacer1 {
-    padding: 20px 0;
+    font-family: $openSans;
+    font-weight: 300;
+
+    hr {
+        clear: both;
+        border: none;
+    }
+
+    .spacer1 {
+        padding: 20px 0;
+        margin: 0;
+    }
+
+    .spacer2 {
+        padding: 40px 0;
+    }
+
+    a {
+        color: $black;
+        cursor: pointer;
+
+        &:hover {
+            color: $black;
+        } 
+    }
+
+    h2 {
+        font-size: 28px;
+        text-align: center;
+        padding-bottom: 40px;
+        margin: 0;
+    }
+
+    .gray {
+        background-color: $gray;
+        width: 100%;
+    }
+
+    .white {
+        background-color: $white;
+        width: 100%;
+    }
+
+    #topImage {
+      min-height: 700px;
+      background: url("../img/portfolio-photo3.jpg") no-repeat fixed;
+      background-position: 50% 20px;
+      background-size: cover;
+    }
+}
+
+.modal-backdrop.in {
+    opacity: 1;
+}
+
+.hamburger {
+    padding: 0;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
     margin: 0;
-  }
-  .spacer2 {
-    padding: 92px 0;
-  }
-  a {
-    color: $black;
-  }
-  a:hover {
-    color: $black;
-  } 
-  h2 {
-    font-size: 28px;
-    text-align: center;
-    padding-bottom: 40px;
-    margin: 0;
-  }
-  .gray {
-    background-color: $gray;
-    width: 100%;
-  }
-  .white {
+    overflow: visible;
+    float: right;
+    height: 20px;
+    
+    &:hover {
+
+        .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+            background-color: $teal;
+        }
+    }
+
+    &:focus {
+      outline: none;
+    }
+}
+
+.hamburger-box {
+  width: 26px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 26px;
+    height: 2px;
     background-color: $white;
-    width: 100%;
-  }
+    border-radius: 0px;
+    position: absolute;
+    transition: color 200ms ease;
+}
 
-   #topImage {
-    min-height: 700px;
-    background:url("../img/portfolio-photo3.jpg") no-repeat fixed;
-    background-position: 50% 20px;
-    background-size: cover;
-  }
+.hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block;
+}
 
-  /* Form */
-  #contact {
-    .form-control:focus {
-      border-color: $teal;
-    }
-    #submit {
-      width: 100%;
-      font-size: 18px;
-      font-weight: 700;
-      background-color: $darkGray;
-      color: $black;
-      border: none;
-      padding: 10px;
+.hamburger-inner::before {
+    top: -8px;
+}
 
-      &:hover {
-        background-color: $teal;
-        transition: background-color.3s ease-in;
-        -webkit-transition: background-color .3s ease-in;
-        -moz-transition: background-color .3s ease-in;
-        -o-transition: background-color .3s ease-in;
-      }
-    }
-  }
+.hamburger-inner::after {
+    bottom: -8px;
+}
+
+.hamburger--squeeze .hamburger-inner {
+    transition-duration: 0.1s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); 
+}
+
+.hamburger--squeeze .hamburger-inner::before {
+    transition: top 0.1s 0.14s ease, opacity 0.1s ease, color 200ms ease;
+}
+
+.hamburger--squeeze .hamburger-inner::after {
+    transition: bottom 0.1s 0.14s ease, transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19), color 200ms ease;
+}
+
+.hamburger--squeeze.is-active .hamburger-inner {
+    transform: rotate(45deg);
+    transition-delay: 0.14s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hamburger--squeeze.is-active .hamburger-inner::before {
+    top: 0;
+    opacity: 0;
+    transition: top 0.1s ease, opacity 0.1s 0.14s ease;
+}
+
+.hamburger--squeeze.is-active .hamburger-inner::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition: bottom 0.1s ease, transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.modal-open {
+    overflow: hidden;
 }

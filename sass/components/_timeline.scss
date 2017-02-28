@@ -1,19 +1,17 @@
 /* _timeline.scss */
 
-/* TIMELINE CSS */
 .timeline {
   margin-bottom: 40px;
 }
+
 .timeline a {
   font-weight: 600;
   color: $black;
+  transition: background-color $hover-transition;
+
   &:hover {
     text-decoration: none;
-    color: $teal;
-    transition: color .3s ease-in;
-    -webkit-transition: color .3s ease-in;
-    -moz-transition: color .3s ease-in;
-    -o-transition: color .3s ease-in;
+    background-color: $teal;
   }
 }
 
@@ -23,6 +21,7 @@
   padding: 20px 0;
   margin: 0;
 }
+
 .timeline dl:before {
   position: absolute;
   top: 0;
@@ -32,14 +31,17 @@
   width: 2px;
   margin-left: -1px;
   content: '';
-  background-color: $darkGray;
+  background-color: $black;
 }
+
 .timeline .dl-black:before {
   background-color: $black;
 }
+
 .timeline dl .dt-black {
   background-color: $black;
 }
+
 .timeline dl dt {
   position: relative;
   top: 30px;
@@ -50,7 +52,7 @@
   font-weight: normal;
   color: white;
   text-align: center;
-  background-color: $darkGray;
+  background-color: $black;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -59,6 +61,7 @@
   position: relative;
   z-index: 200;
 }
+
 .timeline .circ {
   position: absolute;
   top: 40px;
@@ -68,26 +71,30 @@
   height: 22px;
   margin-left: -11px;
   background-color: $teal;
-  border: 4px solid $white;
+  border: 4px solid $black;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
 }
+
 .timeline dl dd .events {
   position: relative;
   padding: 0 10px;
   margin-top: 33px;
-  background-color: $white;
+  background-color: $gray;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
 }
+
 .timeline dl dd .events-right {
     width: 48%;
 }
+
 .timeline dl dd .events-left {
     width: 44%;
 }
+
 .timeline dl dd .events:before {
   position: absolute;
   top: 12px;
@@ -97,36 +104,45 @@
   border-style: solid;
   border-width: 6px;
 }
+
 .timeline dl dd .events .events-object {
   margin-right: 10px;
 }
+
 .timeline dl dd .events .events-body {
   overflow: hidden;
   zoom: 1;
 }
+
 .timeline dl dd .events .events-body .events-heading {
   margin: 0 0 10px;
   font-size: 14px;
 }
+
 .timeline dl dd.pos-right .time {
   margin-left: -100px;
   text-align: right;
 }
+
 .timeline dl dd.pos-right .events {
   float: right;
 }
+
 .timeline dl dd.pos-right .events:before {
   left: -12px;
-  border-color: transparent white transparent transparent;
+  border-color: transparent $gray transparent transparent;
 }
+
 .timeline dl dd.pos-left .time {
   margin-left: 0;
   text-align: left;
 }
+
 .timeline dl dd.pos-left .events {
   float: left;
 }
+
 .timeline dl dd.pos-left .events:before {
   right: -12px;
-  border-color: transparent transparent transparent white;
+  border-color: transparent transparent transparent $gray;
 }
