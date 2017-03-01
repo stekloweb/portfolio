@@ -7,19 +7,28 @@ var $body = $('body');
 
 function showOrHideModal() {
     if ($navModal.hasClass('show')) {
-        $navModal.removeClass('show').addClass('hide');
         $body.removeClass('modal-open');
+        $navModal.removeClass('fade-in'); 
+        setTimeout(function(){ 
+            $navModal.removeClass('show').addClass('hide');
+        }, 300);
     }
     else {
-        $navModal.removeClass('hide').addClass('show');
         $body.addClass('modal-open');
+        $navModal.removeClass('hide').addClass('show');
+        setTimeout(function(){ 
+            $navModal.addClass('fade-in'); 
+        }, 0);
     }
 }
 
 function hideModal() {
     if ($navModal.hasClass('show')) {
-        $navModal.removeClass('show').addClass('hide');
         $body.removeClass('modal-open');
+        $navModal.removeClass('fade-in'); 
+        setTimeout(function(){ 
+            $navModal.removeClass('show').addClass('hide');
+        }, 300);
     }
 }
 
@@ -47,7 +56,6 @@ $logo.on('click', function(e) {
     inactiveHamburger();
     hideModal();
 });
-
 
 
 

@@ -22,7 +22,9 @@ body {
         color: $black;
         cursor: pointer;
 
-        &:hover {
+        &:hover,
+        &:focus, 
+        &:visited {
             color: $black;
         } 
     }

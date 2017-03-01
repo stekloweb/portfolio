@@ -1,41 +1,57 @@
 /* _footer.scss */
 
 footer {
-  background-color: $teal;
+    background-color: $teal;
 
-  h2 {
-    color: $black;
-  }
-
-  #social {
-    list-style-type: none;
-    text-align: center;
-    margin: 0;
-    padding: 20px 0;
-
-    li {
-      display: inline;
-      padding-right: 60px;
-
-      &:last-child {
-        padding-right: 0px;
-      }
-
-      a {
-        color: $black;
-          transition: color $hover-transition;
-
-        &:hover, &:active {
-          color: $white;
-        }
-      }
+    h2 {
+       color: $black;
     }
-  }
 
-  .copyright {
-    color: $black;
-    font-weight: 600;
-    text-align: center;
-    margin-top: 40px;
-  }
+    ul {
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            padding-right: 60px;
+
+            &:last-child {
+                padding-right: 0px;
+            }
+
+            a {
+                display: block;
+                color: $black;
+                background: none;
+
+                &:hover, 
+                &:active {
+                    color: $black;
+
+                     .fa {
+                        background-color: $white;
+                    }
+                }
+
+                .fa {
+                    line-height: 60px;
+                    border-radius: 25%;
+                    margin: -1px;
+                    background-color: $teal;
+                    transition: background-color $hover-transition;
+                }
+            }
+        }
+    }
+
+    .copyright {
+      color: $black;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 40px;
+    }
 }

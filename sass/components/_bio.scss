@@ -1,73 +1,76 @@
 /* _bio.scss */
 
 #bio {
-  h2, h4 {
-    padding-bottom: 20px;
-  }
 
-  h2 {
-    font-size: 40px;
-    text-align: left;
-  }
-
-  .fade-in {
-    opacity:0;
-  }
-
-  h4 {
-    font-size: 20px;
-    line-height: 28px;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-    animation-delay: 1s;
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-  }
-
-  h5 {
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: underline;
-  }
-
-  p {
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-    animation-delay: 500ms;
-    -webkit-animation-delay: 500ms;
-    -moz-animation-delay: 500ms;
-  }
-
-  a {
-    font-weight: 600;
-    color: $black;
-    animation-duration: 1.5s;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    transition: background-color $hover-transition;
-
-    &:hover {
-      text-decoration: none;
-      background-color: $teal;
-    }
-  }
-
-  .btn-default {
-    font-size: 22px;
-    background-color: $teal;
-    color: $black;
-    border: none;
-    padding: 20px 60px;
-    transition: color $hover-transition;
-
-    &:hover {
-      color: $white;
+    h2, h4 {
+        padding-bottom: 20px;
     }
 
-    i {
-      padding-right: 10px;
+    h2 {
+        font-size: 40px;
+        text-align: left;
     }
-  }
+
+    .fade-in {
+        opacity:0;
+    }
+
+    h4 {
+        font-size: 20px;
+        line-height: 28px;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        animation-delay: 1s;
+        -webkit-animation-delay: 1s;
+        -moz-animation-delay: 1s;
+    }
+
+    h5 {
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    p {
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        animation-delay: 500ms;
+        -webkit-animation-delay: 500ms;
+        -moz-animation-delay: 500ms;
+    }
+
+    a {
+        font-weight: 600;
+        color: $black;
+        animation-duration: 1.5s;
+        -webkit-animation-duration: 1.5s;
+        -moz-animation-duration: 1.5s;
+        transition: background-color $hover-transition;
+
+        &:hover {
+            text-decoration: none;
+            background-color: $teal;
+        }
+    }
+
+    .resume {
+        font-size: 22px;
+        border: none;
+        border-radius: 4px;
+        padding: 20px 60px;
+        color: $black;
+        background-color: $teal;
+        transition: all $hover-transition;
+
+        &:hover {
+            color: $teal;
+            background-color: $black;
+        }
+
+        i {
+            padding-right: 10px;
+        }
+    }
 }

@@ -27,7 +27,7 @@
         }
 
         &:focus {
-            color: $teal;
+            color: $white;
             background: none;
             text-decoration: none;
         }
@@ -88,9 +88,10 @@
     height: calc(100vh - 50px);
     width: 100vw;
     background-color: $black;
-    opacity: 1;
     overflow: hidden;
     z-index: 999;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out 10ms;
 
     &-menu {
         display: flex;
@@ -124,6 +125,10 @@
                 }
             }
         }
+    }
+
+    &.fade-in {
+        opacity: 1;
     }
 }
         

@@ -1,148 +1,165 @@
 /* _timeline.scss */
 
 .timeline {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
+
+    .clearfix {
+        margin: 0;
+    }
+
+    a {
+        font-weight: 600;
+        color: $black;
+        transition: background-color $hover-transition;
+
+        &:hover {
+            text-decoration: none;
+            background-color: $teal;
+        }
+    }
+
+    .circ {
+        position: absolute;
+        top: 40px;
+        left: 530px;
+        z-index: 200;
+        width: 22px;
+        height: 22px;
+        margin-left: -11px;
+        background-color: $teal;
+        border: 4px solid $black;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+    }
+
+    dl {
+        position: relative;
+        top: 0;
+        padding: 20px 0;
+        margin: 0;
+
+        &:before {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            z-index: 100;
+            width: 2px;
+            margin-left: -1px;
+            content: '';
+            background-color: $black;
+        }
+    }
+
+    .dl-black:before {
+        background-color: $black;
+    }
+
+    dl .dt-black {
+        background-color: $black;
+    }
+
+    dl dt {
+        position: relative;
+        top: 30px;
+        z-index: 200;
+        width: 120px;
+        padding: 3px 5px;
+        margin: 0 auto 30px;
+        font-weight: normal;
+        color: white;
+        text-align: center;
+        background-color: $black;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+
+        &.clearfix {
+            margin: 0;
+        }
+    }
+
+    dl dd {
+        position: relative;
+        z-index: 200;
+    }
+
+    .events {
+        position: relative;
+        padding: 0 10px;
+        margin-top: 33px;
+        background-color: $gray;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+    }
+
+    dl dd .events-right {
+        width: 44%;
+    }
+
+    dl dd .events-left {
+        width: 44%;
+    }
+
+    dl dd .events:before {
+        position: absolute;
+        top: 12px;
+        width: 0;
+        height: 0;
+        content: '';
+        border-style: solid;
+        border-width: 6px;
+    }
+
+    dl dd .events .events-object {
+        margin-right: 10px;
+    }
+
+    dl dd .events .events-body {
+        overflow: hidden;
+        zoom: 1;
+        text-align: center;
+    }
+
+    dl dd .events .events-body .events-heading {
+        margin: 0 0 10px;
+        font-size: 14px;
+    }
+
+    dl dd.pos-right .time {
+        margin-left: -100px;
+        text-align: right;
+    }
+
+    dl dd.pos-right .events {
+        float: right;
+    }
+
+    dl dd.pos-right .events:before {
+        left: -12px;
+        border-color: transparent $gray transparent transparent;
+    }
+
+    dl dd.pos-left .time {
+        margin-left: 0;
+        text-align: left;
+    }
+
+    dl dd.pos-left .events {
+        float: left;
+    }
+
+    dl dd.pos-left .events:before {
+        right: -12px;
+        border-color: transparent transparent transparent $gray;
+    }
 }
 
-.timeline a {
-  font-weight: 600;
-  color: $black;
-  transition: background-color $hover-transition;
 
-  &:hover {
-    text-decoration: none;
-    background-color: $teal;
-  }
-}
 
-.timeline dl {
-  position: relative;
-  top: 0;
-  padding: 20px 0;
-  margin: 0;
-}
 
-.timeline dl:before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  z-index: 100;
-  width: 2px;
-  margin-left: -1px;
-  content: '';
-  background-color: $black;
-}
 
-.timeline .dl-black:before {
-  background-color: $black;
-}
 
-.timeline dl .dt-black {
-  background-color: $black;
-}
 
-.timeline dl dt {
-  position: relative;
-  top: 30px;
-  z-index: 200;
-  width: 120px;
-  padding: 3px 5px;
-  margin: 0 auto 30px;
-  font-weight: normal;
-  color: white;
-  text-align: center;
-  background-color: $black;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-}
-.timeline dl dd {
-  position: relative;
-  z-index: 200;
-}
-
-.timeline .circ {
-  position: absolute;
-  top: 40px;
-  left: 530px;
-  z-index: 200;
-  width: 22px;
-  height: 22px;
-  margin-left: -11px;
-  background-color: $teal;
-  border: 4px solid $black;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-}
-
-.timeline dl dd .events {
-  position: relative;
-  padding: 0 10px;
-  margin-top: 33px;
-  background-color: $gray;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-}
-
-.timeline dl dd .events-right {
-    width: 48%;
-}
-
-.timeline dl dd .events-left {
-    width: 44%;
-}
-
-.timeline dl dd .events:before {
-  position: absolute;
-  top: 12px;
-  width: 0;
-  height: 0;
-  content: '';
-  border-style: solid;
-  border-width: 6px;
-}
-
-.timeline dl dd .events .events-object {
-  margin-right: 10px;
-}
-
-.timeline dl dd .events .events-body {
-  overflow: hidden;
-  zoom: 1;
-}
-
-.timeline dl dd .events .events-body .events-heading {
-  margin: 0 0 10px;
-  font-size: 14px;
-}
-
-.timeline dl dd.pos-right .time {
-  margin-left: -100px;
-  text-align: right;
-}
-
-.timeline dl dd.pos-right .events {
-  float: right;
-}
-
-.timeline dl dd.pos-right .events:before {
-  left: -12px;
-  border-color: transparent $gray transparent transparent;
-}
-
-.timeline dl dd.pos-left .time {
-  margin-left: 0;
-  text-align: left;
-}
-
-.timeline dl dd.pos-left .events {
-  float: left;
-}
-
-.timeline dl dd.pos-left .events:before {
-  right: -12px;
-  border-color: transparent transparent transparent $gray;
-}

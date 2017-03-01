@@ -6,7 +6,7 @@
 @media (min-width: 992px) and (max-width: 1199px) {
 
     .timeline dl dd .circ {
-        left: 430px;
+        left: 470px;
     }
 
     #web .site {
@@ -38,7 +38,7 @@
     }
 
     .timeline dl dd .circ {
-        left: 320px;
+        left: 360px;
     }
 
     #web {
@@ -66,18 +66,6 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-
-    body .navbar .navDesktop li {
-        margin-right: 25px;
-
-        &:last-child {
-            margin-right: 0;
-        }
-
-        a {
-            font-size: 14px;
-        }
-    }
 }
 
 @media screen and (max-width: 767px) {
@@ -89,8 +77,8 @@
             background-position: 50% 40px;
             min-height: 500px; 
         }
-        
-        #bio .btn-default {
+
+        #bio .resume{
             width: 100%;
             display: block;
             text-align: center;
@@ -107,7 +95,7 @@
             }
 
             .timeline .circ {
-                left: 20px;
+                left: 60px;
             }
             
             .timeline dl dd .time {
@@ -122,12 +110,12 @@
 
             .timeline dl dd.pos-left .events {
                 float: right;
-                width: 90%;
+                width: calc(100% - 100px);
             }
             
             .timeline dl dd.pos-left .events:before {
                 left: -12px;
-                border-color: transparent white transparent transparent;
+                border-color: transparent $gray transparent transparent;
             }
 
             .timeline dl dd.pos-right .time {
@@ -138,7 +126,7 @@
 
             .timeline dl dd.pos-right .events {
                 float: right;
-                width: 90%;
+                width: calc(100% - 100px);
             }
         }
     } 
@@ -148,25 +136,37 @@
 
     #top {
 
+        .navbar-logo {
+            font-size: 16px;
+            padding-top: 2px;
+        }
+
         #topImage {
             background-size: 1200px;
             background-position: 50% 25px;
             min-height: 425px; 
         }
         
-        footer #social {
+        ul.social {
 
             li { 
-                display: inline-block;
                 padding-right: 20px;
 
-                .fa-5x {
-                    font-size: 3em;
+                .fa {
+                    line-height: 30px;
+
+                    &.fa-5x {
+                       font-size: 3em;
+                    }
                 }
             }
         }
 
         #timeline {
+
+            .timeline .circ {
+                left: 20px;
+            }
 
             .timeline dl:before {
                 left: 20px;
@@ -174,6 +174,11 @@
 
             dd {
                 margin: 0px;
+            }
+
+            .timeline dl dd.pos-left .events,
+            .timeline dl dd.pos-right .events {
+                width: calc(100% - 60px);
             }
         }
     }

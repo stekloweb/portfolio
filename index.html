@@ -22,17 +22,16 @@
         <link rel="stylesheet" href="css/application.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/temp.css">
         
-        <link rel="stylesheet" href="js/fancy-box/source/jquery.fancybox.css" type="text/css" media="screen">
+        <!--<link rel="stylesheet" href="js/fancy-box/source/jquery.fancybox.css" type="text/css" media="screen">-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway:800,300%7COpen+Sans:400,300,700,600" rel="stylesheet" type="text/css">
            
         <script type ="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-        <script type ="text/javascript" src="js/fancy-box/source/jquery.fancybox.pack.js"></script>
+        <!--<script type ="text/javascript" src="js/fancy-box/source/jquery.fancybox.pack.js"></script>-->
         <script type ="text/javascript" src="js/main.js"></script>
-        <script type ="text/javascript" src="js/bootstrap.js"></script>
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <!--<script type ="text/javascript" src="js/bootstrap.js"></script>-->
+        <!--<script src="js/vendor/modernizr-2.6.2.min.js"></script>-->
         <script src="js/wow.min.js"></script>
         <script>
             new WOW().init();
@@ -45,14 +44,14 @@
         <nav id="nav">
             <div class="navbar navbar-fixed-top">
                 <a class="navbar-logo page-scroll" href="#top">STEPHEN<span id="lastName">KLOS</span></a>
-                <button type="button" class="hamburger hamburger--squeeze hidden-md hidden-lg">
+                <button type="button" class="hamburger hamburger--squeeze hidden-lg hidden-md hidden-sm">
                     <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
                     </span>
                 </button>
 
                 <!-- Desktop Nav -->
-                <ul class="navDesktop hidden-xs hidden-sm ">
+                <ul class="navDesktop hidden-xs">
                     <li><a class="hvr-underline-from-center page-scroll" href="#bio">About</a></li>
                     <li><a class="hvr-underline-from-center page-scroll" href="#web">Web Work</a></li>
                     <li><a class="hvr-underline-from-center page-scroll" href="#timeline">Timeline</a></li>
@@ -61,7 +60,7 @@
             </div>
 
             <!-- Mobile Nav -->
-            <div id="navModal" class="navModal hide fade" tabindex="-1" role="dialog">
+            <div id="navModal" class="navModal hide" tabindex="-1" role="dialog">
                 <ul class="navModal-menu">
                     <li><a href="#bio">About</a></li>
                     <li><a href="#web">Web Work</a></li>
@@ -80,9 +79,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-offset-1 col-md-10">
-                        <h2>Fresh out of college.</h2>
-                        <h4 class="wow fadeInDown">I’m Stephen, a Web Designer, Front-End Developer, and aspiring boat owner from Metro Detroit.
-                            <br>Deployed into the "real world" circa May 2016.
+                        <h2>New kid on the block.</h2>
+                        <h4 class="wow fadeInDown">I’m Stephen, a Web Designer and Front-End Developer from Metro Detroit.
+                            <br>Fresh out of college and in to the "real world" circa 2016.
                         </h4>
 
                         <h5 class="wow fadeInLeft">Bio</h5>
@@ -117,7 +116,7 @@
 
                         <hr class="spacer1">
                     
-                        <a target="_blank" role="button" class="btn btn-default wow bounceInUp" href="StephenKlos_Resume.pdf"><span><i class="fa fa-file-pdf-o"></i></span>Resume</a>
+                        <a target="_blank" role="button" class="resume wow bounceInUp" href="StephenKlos_Resume.pdf"><span><i class="fa fa-file-pdf-o"></i></span>Resume</a>
 
                     </div>
                 </div>
@@ -130,14 +129,6 @@
             <div class="container">
                 <div class="row">
                     <h2>Web Work</h2>
-                </div>
-                <div class="row visible-xs">
-                    <div class="col-xs-12">
-                        <div class="alert alert-dismissible" role="alert">
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <aside class="text-center">Tap a tile for more info!</aside>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- first row -->
@@ -364,7 +355,7 @@
                                 <dd class="pos-left clearfix">
                                     <div class="circ"></div>
                                     <div class="events events-left wow bounceInLeft">
-                                        <div class="events-body text-center">
+                                        <div class="events-body">
                                             <p>Began professional Career at <a target="_blank" href="http://www.perficient.com/services/perficient-digital">Perficient Digital</a>.</p>
                                         </div>
                                     </div>
@@ -384,11 +375,11 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <ul id="social">
+                        <ul class="social">
                             <li><a target="_blank" title="Flickr" href="https://www.flickr.com/photos/23054248@N04/"><i title="Flickr" class="fa fa-flickr fa-5x"></i></a></li>
-                            <li><a target="_blank" title="GitHub" href="https://github.com/stekloweb"><i title="Github" class="fa fa-github-square fa-5x"></i></a></li>
+                            <li><a target="_blank" title="GitHub" href="https://github.com/stekloweb"><i title="Github" class="fa fa-git-square fa-5x"></i></a></li>
                             <li><a target="_blank" title="LinkedIn" href="https://www.linkedin.com/pub/stephen-klos/82/446/797"><i title="LinkedIn" class="fa fa-linkedin-square fa-5x"></i></a></li>
-                            <li><a target="_blank" title="Mail" href="mailto:stekloweb@gmail.com"><i title="Email" class="fa fa-envelope fa-5x"></i></a></li>
+                            <li><a target="_blank" title="Mail" href="mailto:stekloweb@gmail.com"><i title="Email" class="fa fa-envelope-square fa-5x"></i></a></li>
                         </ul>
                     </div>
                 </div>
