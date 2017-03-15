@@ -8,22 +8,6 @@
     .timeline dl dd .circ {
         left: 470px;
     }
-
-    #web .site {
-
-        .site-hover, 
-        .box {
-            width: 293px;
-        }
-
-        h3 {
-            font-size: 18px;
-        }
-
-        p {
-            margin: 1em;
-        }
-    }
 }
 
 // @media only screen and (min-width: 1200px) {
@@ -40,22 +24,6 @@
     .timeline dl dd .circ {
         left: 360px;
     }
-
-    #web {
-
-        .site {
-            display: block;
-            margin: 0 auto;
-            margin-bottom: 40px;
-            width: 100%;
-            max-width: 360px;
-            position: relative;
-        }
-
-        hr {
-            display: none;
-        }
-    }
 }
 
 @media (min-width: 768px) {
@@ -66,6 +34,42 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
+     #web-work {
+
+        .web-work-item {
+            height: 320px;
+        }
+
+        figure {
+            
+            figcaption {
+                height: 60px;
+                padding: 5px 0px;
+                display: flex;
+                justify-content: space-around;
+                flex-flow: column wrap;
+
+                h3 {
+                    font-size: 14px;
+                }
+
+                p {
+                    margin: 0;
+                    font-size: 12px;
+                }
+            }
+
+            .img-wrapper {
+                height: 260px;
+            }
+
+            img {
+                max-height: 220px;
+            }
+        }
+    }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -78,10 +82,97 @@
             min-height: 500px; 
         }
 
-        #bio .resume{
-            width: 100%;
-            display: block;
-            text-align: center;
+        #about {
+
+            .about-row {
+                display: block;
+                padding: 40px 0;
+
+                .visible-xs {
+                    display: inline-block !important;
+                }
+
+                h4 {
+                    text-align: center;
+                    font-weight: normal;
+                    letter-spacing: 4px;
+                    font-size: 32px;
+
+                    .fa {
+                        font-size: 32px;
+                    }
+                }
+            }
+        }
+
+        #web-work {
+
+            .web-work-item {
+                width: auto;
+                min-height: 280px;
+                min-width: 280px;
+                height: auto;
+
+                &:hover {
+
+                    .img-wrapper {
+                        padding: 20px;
+                    }
+                }
+
+                h3 {
+                    font-size: 16px;
+                }
+
+                p {
+                    margin: 0;
+                }
+            }
+
+            .img-wrapper {
+                transition: none;
+                height: auto;
+                min-height: 200px;
+            }
+
+            figcaption {
+                height: 80px;
+                display: flex;
+                justify-content: space-around;
+                flex-flow: column wrap;
+                padding: 10px 0;
+            }
+
+            .web-work-modal {
+                padding: 0;
+
+                &-inner {
+                    padding: 0 1em;
+                }
+
+                &-close {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                h4 {
+                    font-size: 40px;
+                    margin-bottom: 20px;
+                }
+
+                h5 {
+                    font-size: 24px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    margin-bottom: 20px;
+                }
+
+                a {
+                    width: 100%;
+                }
+            }
         }
 
         #timeline {

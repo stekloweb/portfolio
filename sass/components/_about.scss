@@ -1,23 +1,21 @@
-/* _bio.scss */
+/* _about.scss */
 
-#bio {
+.about {
 
-    h2, h4 {
-        padding-bottom: 20px;
+    h2, h3 {
+        padding-bottom: 40px;
+        margin: 0;
     }
 
     h2 {
-        font-size: 40px;
-        text-align: left;
+        font-size: 64px;
+        font-weight: bold;
     }
 
-    .fade-in {
-        opacity:0;
-    }
-
-    h4 {
-        font-size: 20px;
-        line-height: 28px;
+    h3 {
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
         animation-duration: 1s;
         -webkit-animation-duration: 1s;
         -moz-animation-duration: 1s;
@@ -26,10 +24,11 @@
         -moz-animation-delay: 1s;
     }
 
-    h5 {
-        font-size: 16px;
+    h4 {
+        font-size: 24px;
         font-weight: bold;
-        text-decoration: underline;
+        letter-spacing: 2px;
+        margin: 0 0 40px 0;
     }
 
     p {
@@ -55,13 +54,51 @@
         }
     }
 
+    .fade-in {
+        opacity:0;
+    }
+
+    .intro {
+        padding: 20px 0 40px 0;
+    }
+
+    &-row {
+        display: flex;
+        padding: 20px 0;
+
+        .fa {
+            font-size: 100px;
+        }
+    }
+
+    &-icon {
+        text-align: center;
+        align-self: center;
+    }
+
+    .skills-grid {
+        margin-left: -5px;
+
+        span {
+            font-weight: bold;
+            padding: 2px 5px;
+            margin: 5px;
+            border: 2px solid black;
+            display: inline-block;
+        }
+    }
+
     .resume {
-        font-size: 22px;
-        border: none;
-        border-radius: 4px;
-        padding: 20px 60px;
+        font-size: 32px;
+        text-align: center;
         color: $black;
         background-color: $teal;
+        border: none;
+        border-radius: 4px;
+        padding: 1em 0;
+        margin: 80px auto;
+        width: 320px;
+        display: block;
         transition: all $hover-transition;
 
         &:hover {
@@ -69,7 +106,8 @@
             background-color: $black;
         }
 
-        i {
+        .fa {
+            font-size: 32px;
             padding-right: 10px;
         }
     }

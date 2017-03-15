@@ -1,78 +1,173 @@
 /* _webWork.scss */
 
-#web {
+.web-work {
 
-  .alert {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-    padding: 10px;
-    max-width: 360px;
-    width: 100%;
-    background-color: $white;
-    border: 5px solid $teal;
-  }
-
-  .close {
-    font-size: 40px;
-    top: -10px;
-    right: 0px;
-    color: $teal;
-    opacity: 1;
-    background: none;
-    text-shadow: none;
-  }
-}
-
-.site {
-
-  h3 {
-    font-weight: bold;
-    font-size: 20px;
-    padding: 0;
-    margin: 0;
-    color: $teal;
-  }
-
-  img {
-    width: 100%;
-    max-width: 360px;
-    background-color: $white;
-    padding: 10px;  
-    display: block;
-    margin: 0 auto; 
-  }
-
-  /* Fade */
-  .site-hover {
-    background: rgba(0, 0, 0, .8);
-    position: absolute;
-    overflow: hidden;
-    width: 100%;
-    max-width: 360px;
-    height: 100%;
-    opacity: 0;
-    transition: opacity ease-out 0.5s;
-
-    &:hover, &:focus, &:active {
-      opacity: 1;
+    &-header p {
+        text-align: center;
+        margin: 0;
+        padding-bottom: 20px;
     }
 
-    &:hover .box {
-      bottom: 0px;
-      background-color: $teal;
+    &-grid {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
     }
 
-    .box {
-      height: 100px;
-      width: 100%;
-      max-width: 360px;
-      position: absolute; 
-      bottom: -60px;
-      transition: bottom ease-out 200ms;
-      text-align: center;
-      padding: 20px 0px;
+    &-item {
+        background: none;
+        margin: 20px;
+        width: calc(50% - 40px);
+        height: 430px;
+        padding: 0;
+        border: none;
+        color: $black;
+        font-family: $openSans;
+
+        &:hover {
+
+            .img-wrapper {
+                padding: 0;
+            }
+
+            img {
+                opacity: 1;
+            }
+        }
     }
-  }
+
+    figure {
+
+        .img-wrapper {
+            height: 330px;
+            background-color: $black;
+            padding: 20px;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            transition: padding $hover-transition;
+        }
+
+         img {
+            width: 100%;
+            max-height: 280px;
+            opacity: 0.4;
+            transition: opacity $hover-transition;
+        }
+
+        figcaption {
+            background-color: $teal;
+            height: 100px;
+            width: 100%;
+            text-align: center;
+            padding: 20px 0px;
+            z-index: 2;
+        }
+
+        h3 {
+            font-weight: bold;
+            font-size: 20px;
+            padding: 0;
+            margin: 0;
+            color: $black;
+        }
+    }
+
+    &-modal {
+        width: 100%;
+        height: 100vh;
+        background-color: $teal;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        opacity: 0;
+        transition: opacity 300ms ease-in-out 10ms;
+
+        &.fade-in {
+            opacity: 1;
+        }
+
+        &-inner {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            position: relative;
+            padding: 0 10%;
+
+            h4 {
+                font-size: 60px;
+                font-weight: bold;
+                margin: 0 0 40px 0;
+            }
+
+            h5 {
+                font-size: 30px;
+                margin: 0 0 40px 0;
+            }
+
+            p {
+                margin: 0 0 40px 0;
+
+                &:first-child {
+                    font-size: 18px;
+                }
+            }
+
+            a {
+                font-size: 20px;
+                font-weight: bold;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                text-align: center;
+                border-radius: 4px;
+                width: 50%;
+                padding: 20px;
+                color: $white;
+                background-color: $black;
+                transition: color $hover-transition;
+
+                &:hover,
+                &:visited:hover {
+                    text-decoration: none;
+                    color: $teal;
+                }
+
+                &:visited {
+                    color: $white;
+                }
+            }
+        }
+
+        &-close {
+            color: black;
+            border: none;
+            background: none;
+            padding: 0;
+            font-size: 48px;
+            line-height: 36px;
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transition: all $hover-transition;
+
+            &:hover {
+                background-color: $black;
+                color: $teal;
+            }
+
+            span {
+                position: relative;
+                top: -3px;
+                left: 2px;
+            }
+        }
+    }
 }

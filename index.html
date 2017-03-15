@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Stephen Klos</title>
+        <meta name="robots" content="noindex">
         <meta name="description" content="A collection of web design projects and photography by Stephen Klos.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,21 +23,9 @@
         <link rel="stylesheet" href="css/application.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        
-        <!--<link rel="stylesheet" href="js/fancy-box/source/jquery.fancybox.css" type="text/css" media="screen">-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway:800,300%7COpen+Sans:400,300,700,600" rel="stylesheet" type="text/css">
-           
-        <script type ="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-        <!--<script type ="text/javascript" src="js/fancy-box/source/jquery.fancybox.pack.js"></script>-->
-        <script type ="text/javascript" src="js/main.js"></script>
-        <!--<script type ="text/javascript" src="js/bootstrap.js"></script>-->
-        <!--<script src="js/vendor/modernizr-2.6.2.min.js"></script>-->
-        <script src="js/wow.min.js"></script>
-        <script>
-            new WOW().init();
-        </script>
-       
+    
     </head>
     <body id="top" data-spy="scroll">
 
@@ -52,8 +41,8 @@
 
                 <!-- Desktop Nav -->
                 <ul class="navDesktop hidden-xs">
-                    <li><a class="hvr-underline-from-center page-scroll" href="#bio">About</a></li>
-                    <li><a class="hvr-underline-from-center page-scroll" href="#web">Web Work</a></li>
+                    <li><a class="hvr-underline-from-center page-scroll" href="#about">About</a></li>
+                    <li><a class="hvr-underline-from-center page-scroll" href="#web-work">Web Work</a></li>
                     <li><a class="hvr-underline-from-center page-scroll" href="#timeline">Timeline</a></li>
                     <li><a class="hvr-underline-from-center page-scroll" href="#contact">Contact</a></li>
                 </ul>
@@ -62,8 +51,8 @@
             <!-- Mobile Nav -->
             <div id="navModal" class="navModal hide" tabindex="-1" role="dialog">
                 <ul class="navModal-menu">
-                    <li><a href="#bio">About</a></li>
-                    <li><a href="#web">Web Work</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#web-work">Web Work</a></li>
                     <li><a href="#timeline">Timeline</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -75,184 +64,359 @@
 
 
         <!-- ABOUT -->
-        <section id="bio" class="white spacer2">
+        <section id="about" class="about white spacer2">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-offset-1 col-md-10">
+                <div class="intro row">
+                    <div class="col-xs-12">
                         <h2>New kid on the block.</h2>
-                        <h4 class="wow fadeInDown">I’m Stephen, a Web Designer and Front-End Developer from Metro Detroit.
-                            <br>Fresh out of college and in to the "real world" circa 2016.
-                        </h4>
-
-                        <h5 class="wow fadeInLeft">Bio</h5>
-                        <p class="wow fadeInLeft">I recently graduated from Michigan State University. I majored in Media and Information with a concentration in Social and Interactive Media and a Minor in Information Technology.  
-                        <br>Yeah, I know... quite the mouthful.</p>
-
-                        <p class="wow fadeInLeft">During my stay at MSU I dipped my feet into a few professional web development experience. I got my first gig at <a target="_blank" href="http://getsnworks.com/">SNworks</a>, a partner company of <a href="http://statenews.com/">The State News</a>.  There, a handful of other students and myself designed and built responsive websites for newspapers from major universities (including MSU's) using our in-house Content Management System called Gryphon.  We maintained our sites (roughly 30) through Agile Workflow using a ticket-based system (JIRA).</p>
-
-                        <p class="wow fadeInLeft"> During my senior year I worked at <a target="_blank" href="https://www.jackson.com/Index.jsp">Jackson National Life</a>, a top-ranked US financial services company based in Lansing.  In my time there, I assisted in the following: maintaining and updating websites for several of Jackson's affiliated companies, establishing customized style guides for specific projects, researching industry-related web standards, producing internal referencing documents, and creating wireframes/mock-ups for supplementary content.</p>
-                        
-                        <p class="wow fadeInLeft">Now graduated, I am currently employed at <a target="_blank" href="http://www.perficient.com/services/perficient-digital">Perficient Digital</a> as a UI Engineer.
-                        </p>
-
-                        <h5 class="wow fadeInLeft">Skills</h5>
-                        <p class="wow fadeInLeft">Between my jobs at SNworks and JNL, I have worked most closely with:
-                            <br>
-                            Languages, Libraries, etc. such as HTML5, CSS3 (Boostrap, Foundation, LESS/SASS), Javascript (jQuery), and, PHP (Twig), and JavaServer Pages (JSP),
-                            <br>
-                            Project Management systems such as Basecamp, Microsoft VSTS,
-                            <br>
-                            Source Code Management Systems such as Git Hub and Bitbucket,
-                            <br>
-                            Task Runners such as Grunt and Gulp,
-                            <br>
-                            Analytics via Google Analytics, 
-                            <br>
-                            Design Tools such as Photoshop and Illustrator,
-                            <br>
-                            Documentation Software such as Excel and Confluence.
-                        </p>
-                        <p class="wow fadeInLeft">To see the rest of my skills, check out my resume!</p>
-
-                        <hr class="spacer1">
-                    
-                        <a target="_blank" role="button" class="resume wow bounceInUp" href="StephenKlos_Resume.pdf"><span><i class="fa fa-file-pdf-o"></i></span>Resume</a>
-
+                        <h3 class="wow fadeInDown">
+                            I’m Stephen, a Web Designer and Front-End Developer from Metro Detroit.<br>
+                            Fresh out of college and in to the "real world" circa 2016.
+                        </h3>
                     </div>
                 </div>
+
+                <div class="about-row row wow fadeInLeft">
+                    <div class="about-icon col-sm-3 hidden-xs">
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-sm-9 col-xs-12">
+                        <h4>EDUCATION <i class="fa fa-graduation-cap visible-xs" aria-hidden="true"></i></h4>
+                        <p>
+                            I recently graduated from Michigan State University. 
+                            I majored in Media and Information with a concentration in Social and Interactive Media and a Minor in Information Technology.<br> 
+                            Yeah, I know... quite the mouthful.
+                        </p>
+                        <p>Prior to transferring to MSU, I earned my Associate's of Science at Schoolcraft College.</p>
+                    </div>
+                </div>
+
+                <div class="about-row row wow fadeInRight">
+                    <div class="about-icon col-sm-3 hidden-xs">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-sm-9 col-xs-12">
+                        <h4>EMPLOYMENT <i class="fa fa-briefcase visible-xs" aria-hidden="true"></i></h4>
+                        <p>
+                            During my college days at MSU, I dipped my feet into a few professional web development experiences. 
+                            I got my first gig at <a target="_blank" href="http://getsnworks.com/">SNworks</a>, 
+                            a partner company of <a href="http://statenews.com/">The State News</a>.  
+                            There, a handful of other students and myself designed and built responsive websites for newspapers from major universities 
+                            (including MSU's). We built these sites around our in-house Content Management System called Gryphon.  
+                            We maintained our sites (roughly 30) through Agile Workflow using a ticket-based system (JIRA).
+                        </p>
+                        <p>
+                            During my senior year I worked at <a target="_blank" href="https://www.jackson.com/Index.jsp">Jackson National Life</a>, 
+                            a top-ranked US financial services company based in Lansing.  In my time there, I assisted in the following: 
+                            maintaining and updating websites for several of Jackson's affiliated companies, establishing customized style guides for specific projects, 
+                            researching industry-related web standards, producing internal referencing documents, 
+                            and creating wireframes/mock-ups for supplementary content.
+                        </p>
+                        <p>
+                            I am currently employed at <a target="_blank" href="http://www.perficient.com/services/perficient-digital">Perficient Digital</a> as a UI Engineer.  
+                            To give you the TL;DR, my team and I design and build websites for other companies.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about-row row wow fadeInLeft">
+                    <div class="about-icon col-sm-3 hidden-xs">
+                        <i class="fa fa-magic" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-sm-9 col-xs-12">
+                        <h4>SKILLS <i class="fa fa-magic visible-xs" aria-hidden="true"></i></h4>
+
+                        <div class="skills-grid">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>jQuery</span>
+                            <span>LESS/SASS</span>
+                            <span>Bootstrap/Foundation</span>
+                            <span>Git</span>
+                            <span>Gulp</span>
+                            <span>Node.js/NPM</span>
+                            <span>Java Server Pages (JSP)</span>
+                            <span>Twig (PHP)</span>
+                            <span>Agile/Waterfall</span>
+                            <span>JIRA</span>
+                            <span>VSTS</span>
+                            <span>Basecamp</span>
+                            <span>Visual Studio</span>
+                            <span>Google Analytics</span>
+                            <span>Word/Excel</span>
+                            <span>Photoshop</span>
+                            <span>Illustrator</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="resume wow fadeInUp" target="_blank" role="button" href="StephenKlos_Resume.pdf"><span><i class="fa fa-file-pdf-o"></i></span>Resume</a>
+
             </div>
         </section>
-        <hr>
 
         <!-- WEB WORK-->
-        <section id="web" class="gray spacer2">
+        <section id="web-work" class="web-work gray spacer2">
             <div class="container">
-                <div class="row">
+                <div class="row web-work-header">
                     <h2>Web Work</h2>
+                    <p>Click a tile for more info!</p>
                 </div>
 
-                <!-- first row -->
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="site">
-                            <figure class="site-hover">
-                                <figcaption class="box">
-                                    <h3><a target="_blank" href="aquarium/index.html">Aquarium Simulation</a></h3>
-                                    <p>JavaScript Project</p>
-                                </figcaption>
-                                <hr>
-                            </figure>
-                            <img alt="Aquarium" src="img/sites/aquarium.jpg"> 
-                        </div>
-                    </div>
+                <div class="web-work-grid">
 
-                    <div class="col-md-4">
-                        <div class="site">
-                            <figure class="site-hover">
-                                <figcaption class="box">
-                                    <h3><a target="_blank" href="http://www.awolau.org/">American Way of Life Magazine</a></h3>
-                                    <p>American University Student Magazine</p>
-                                </figcaption>
-                                <hr>
-                            </figure>
-                            <img alt="American Way of Life Magazine" src="img/sites/awol.jpg"> 
+                    <!-- JJ -->
+                    <button class="web-work-item">
+                        <figure>
+                            <div class="img-wrapper">
+                                <img alt="Jimmy Johns website screenshot" src="img/sites/jimmy-johns2.png">
+                            </div>
+                            <figcaption>
+                                <h3>Jimmy John's</h3>
+                                <p>Primary Website</p>
+                            </figcaption>
+                        </figure>
+                    </button>
+                    <aside class="web-work-modal hide">
+                        <div class="web-work-modal-inner">
+                            <button class="web-work-modal-close"><span>&times;</span></button>
+                            <h4>Jimmy John's</h4>
+                            <p>Created at: <strong>Perficient</strong></p>
+                            <h5>About</h5>
+                            <p>
+                                Jimmy John's is one of the nation’s largest sandwich shop franchises.  
+                                Aside from a biography, their website has many other features such as a blog, a merchandise store and integrated social 
+                                media sharing. Their website is also an e-commerce platform where one can order their sandwiches for takeout or delivery. 
+                            </p>
+                            <h5>Roles</h5>
+                            <p>
+                                My role on this website was primarily website maintenance and making updates from change requests.  
+                                I worked specifically on the ordering platform - updating the javascript associated with the ingredients, sandwiches, quantities, and prices.
+                            </p>
+                            <a target="_blank" href="https://www.jimmyjohns.com/menu/#/">Visit site</a>
                         </div>
-                    </div>
+                    </aside>
 
-                    <div class="col-md-4">
-                        <div class="site">
-                            <figure class="site-hover">
-                                <figcaption class="box">
-                                    <h3><a target="_blank" href="http://www.theplainsman.com/">The Plainsman</a></h3>
-                                    <p>Auburn University Student Newspaper</p>
-                                </figcaption>
-                            </figure>
-                            <img alt="Auburn Plainsman" src="img/sites/auburn.jpg">
+                    <!-- Carhartt -->
+                    <button class="web-work-item">
+                        <figure>
+                            <div class="img-wrapper">
+                                <img alt="Carhartt Lookbook Fall 2016 website screenshot" src="img/sites/carhartt2.png">
+                            </div>
+                            <figcaption>
+                                <h3>Carhartt&reg; Lookbook Fall 2016</h3>
+                                <p>Digital Catalog</p>
+                            </figcaption>
+                        </figure>
+                    </button>
+                    <aside class="web-work-modal hide">
+                        <div class="web-work-modal-inner">
+                            <button class="web-work-modal-close"><span>&times;</span></button>
+                            <h4>Carhartt&reg; Lookbook Fall 2016</h4>
+                            <p>Created at: <strong>Perficient</strong></p>
+                            <h5>About</h5>
+                            <p>
+                                The Carhartt Lookbook from my understanding is a digital catalog where users, specifically authors of magazines and blogs, 
+                                can view and select items from Carhartt’s seasonal apparel lines and advertise them in the publications the authors belong to.
+                            </p>
+                            <h5>Roles</h5>
+                            <p>
+                                My role on this website was primarily website maintenance and making updates from change requests.  
+                                I worked specifically on the ordering platform - updating the javascript associated with the ingredients, sandwiches, quantities, and prices.
+                            </p>
+                            <a target="_blank" href="http://www.carharttlookbook.com/fall-2016/">Visit site</a>
                         </div>
-                    </div>
+                    </aside>
+
+                    <!-- CHS -->
+                    <button class="web-work-item">
+                        <figure>
+                            <div class="img-wrapper">
+                                <img alt="Cardinal Health Inventory Management Survey screenshot" src="img/sites/cardinal-health-survey2.png">
+                            </div>
+                            <figcaption>
+                                <h3>Cardinal Health Survey</h3>
+                                <p>Inventory Management Survey</p>
+                            </figcaption>
+                        </figure>
+                    </button>
+                    <aside class="web-work-modal hide">
+                        <div class="web-work-modal-inner">
+                            <button class="web-work-modal-close"><span>&times;</span></button>
+                            <h4>Cardinal Health Survey</h4>
+                            <p>Created at: <strong>Perficient</strong></p>
+                            <h5>About</h5>
+                            <p>
+                                Cardinal Health wanted to create a responsive online survey for a social media campaign that they would market towards people
+                                 in the Inventory Management industry.  This survey was 10 questions long and dynamically built with HTML, CSS, 
+                                 and JavaScript alone.  The entire site is 4 pages — a welcome page, the survey page, the results page, and a thank you page. 
+                            </p>
+                            <h5>Roles</h5>
+                            <p>
+                                This was the first project that I built entirely by myself at Perficient and perhaps my proudest work.  
+                                I used Foundation, jQuery, and Gulp to build the site and also implemented Google Analytics. 
+                            </p>  
+                            <a target="_blank" href="http://inventorymanagementiq.cardinalhealth.com/">Visit site</a>
+                        </div>
+                    </aside>
+
+                    <!-- ASM -->
+                    <button class="web-work-item">
+                        <figure>
+                            <div class="img-wrapper">
+                                <img alt="Arboriculture Society of Michigan website screenshot" src="img/sites/asm2.png">
+                            </div>
+                            <figcaption>
+                                <h3>Aboriculture Society of Michigan (ASM)</h3>
+                                <p>Wordpress Website</p>
+                            </figcaption>
+                        </figure>
+                    </button>
+                    <aside class="web-work-modal hide">
+                        <div class="web-work-modal-inner">
+                            <button class="web-work-modal-close"><span>&times;</span></button>
+                            <h4>Aboriculture Society of Michigan (ASM)</h4>
+                            <p>Created at: <strong>School Project</strong></p>
+                            <h5>About</h5>
+                            <p>
+                                The Arboriculture Society of Michigan is a non-profit organization that promotes arboriculture (the cultivation and management of trees) 
+                                in the state of Michigan.  The site is built on Wordpress.  Three others and myself were involved in the construction of the 
+                                website because it was our Capstone project at MSU.  
+                                I do not manage this website so there may be some broken elements or design mishaps omnipresent.
+                            </p>
+                            <h5>Roles</h5>
+                            <p>
+                                My primary roles for this site included the website design, the front-end development, back-end development, 
+                                as well as hosting the site.  More specifically I created wireframes, integrated the theme, added appropriate plugins, 
+                                added custom styles, added content, and worked with the client to get the site in a good enough state to hand back to them. 
+                            </p>         
+                            <a target="_blank" href="http://www.asm-isa.org/">Visit site</a>
+                        </div>
+                    </aside>
+
+                    <!-- Parallel -->
+                    <button class="web-work-item">
+                        <figure>
+                            <div class="img-wrapper">
+                                <img alt="Parallel - online vinyl retailer e-commerce site (fake website)" src="img/sites/parallel2.png">
+                            </div>
+                            <figcaption>
+                                <h3>Parallel</h3>
+                                <p>Fake E-Commerce Platform</p>
+                            </figcaption>
+                        </figure>
+                    </button>
+                    <aside class="web-work-modal hide">
+                        <div class="web-work-modal-inner">
+                            <button class="web-work-modal-close"><span>&times;</span></button>
+                            <h4>Parallel</h4>
+                            <p>Created at: <strong>School Project</strong></p>
+                            <h5>About</h5>
+                            <p>
+                                Parallel is fake online vinyl record retailer.  It's a website using Open Cart, an open-source e-commerce platform.  
+                                The site was built for one of my E-Commerce course at MSU.
+                            </p>
+                            <h5>Roles</h5>
+                            <p>I designed all the imagery and added all the content for this website.  Also made some custom styles.</p>         
+                            <a target="_blank" href="http://www.stephenklosweb.com/store/">Visit site</a>
+                        </div>
+                    </aside>
+                    
+                    <!-- Aquarium -->
+                    <button class="web-work-item">
+                        <figure>
+                            <div class="img-wrapper">
+                                <img alt="Aquarium" src="img/sites/aquarium2.png"> 
+                            </div>
+                            <figcaption>
+                                <h3>Aquarium Simulation</h3>
+                                <p>JavaScript Project</p>
+                            </figcaption>
+                        </figure>
+                    </button>
+                    <aside class="web-work-modal hide">
+                        <div class="web-work-modal-inner">
+                            <button class="web-work-modal-close"><span>&times;</span></button>
+                            <h4>Aquarium Simulation</h4>
+                            <p>Created at: <strong>School Project</strong></p>
+                            <h5>About</h5>
+                            <p>The aquarium simulation project was the equivalent of a final exam for my Intro to JavaScript course at MSU.</p>
+                            <h5>Roles</h5>
+                            <p>
+                                I designed and built this entire project myself.  
+                                I designed the sprites in Illustrator and created the functionality using HTML Canvas and vanilla javascript.
+                            </p>       
+                           <a target="_blank" href="aquarium/index.html">View Project</a>
+                        </div>
+                    </aside>
+
+                    <!-- EE -->
+                    <button class="web-work-item">
+                        <figure>
+                            <div class="img-wrapper">
+                                <img alt="Eastern Echo" src="img/sites/emu2.png">
+                            </div>
+                            <figcaption>
+                                <h3>The Easten Echo</h3>
+                                <p>Eastern Michigan University Student Newspaper</p>
+                            </figcaption>
+                        </figure>
+                    </button>
+                    <aside class="web-work-modal hide">
+                        <div class="web-work-modal-inner">
+                            <button class="web-work-modal-close"><span>&times;</span></button>
+                            <h4>The Easten Echo</h4>
+                            <p>Created at: <strong>SNworks</strong></p>
+                            <h5>About</h5>
+                            <p>
+                                The Eastern Echo is the student newspaper representing Eastern Michigan University.  
+                                This website was redesigned and built several years ago when I was working at SNworks during college. 
+                                This website is using the Grpyhon content management system (a CMS built by my boss Mike).
+                            </p>
+                            <h5>Roles</h5>
+                            <p>
+                                A couple other students along with myself were responsible for the front-end development of the website.  
+                                We used HTML, CSS, jQuery, and a PHP framework called Twig to build the site.  
+                            </p> 
+                            <a target="_blank" href="http://www.easternecho.com/">Visit site</a>
+                        </div>
+                    </aside>
+
+                    <!-- AP -->
+                    <button class="web-work-item">
+                        <figure>
+                            <div class="img-wrapper">
+                                <img alt="Auburn Plainsman" src="img/sites/auburn2.png">
+                            </div>
+                            <figcaption>
+                                <h3>The Plainsman</h3>
+                                <p>Auburn University Student Newspaper</p>
+                            </figcaption>
+                        </figure>
+                    </button>
+                    <aside class="web-work-modal hide">
+                        <div class="web-work-modal-inner">
+                            <button class="web-work-modal-close"><span>&times;</span></button>
+                            <h4>The Plainsman</h4>
+                            <p>Created at: <strong>SNworks</strong></p>
+                            <h5>About</h5>
+                            <p>
+                                The Plainsman is the student newspaper representing Auburn University.  
+                                This website was redesigned and built several years ago when I was working at SNworks during college. 
+                                This website is using the Grpyhon content management system (a CMS built by my boss Mike).
+                            </p>
+                            <h5>Roles</h5>
+                            <p>
+                                A couple other students along with myself were responsible for the front-end development of the website.  
+                                We used HTML, CSS, jQuery, and a PHP framework called Twig to build the site.  
+                            </p>
+                           <a target="_blank" href="http://www.theplainsman.com/">Visit site</a>
+                        </div>
+                    </aside>
+
                 </div>
-                <hr>
 
-                <!-- second row -->
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="site">
-                            <figure class="site-hover">
-                                <figcaption class="box">
-                                    <h3><a target="_blank" href="http://www.ubspectrum.com/">The Spectrum</a></h3>
-                                    <p>University of Buffalo Student Newspaper</p>
-                                </figcaption>
-                            </figure>
-                            <img alt="Buffalo Spectrum" src="img/sites/buffalo.jpg">
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="site">
-                            <figure class="site-hover">
-                                <figcaption class="box">
-                                    <h3><a target="_blank" href="http://www.elonpendulum.com/">The Pendulum</a></h3>
-                                    <p>Elon University Student Newspaper</p>
-                                </figcaption>
-                            </figure>    
-                            <img alt="Elon Pendulum" src="img/sites/elon.jpg">
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="site">
-                            <figure class="site-hover">
-                                <figcaption class="box">
-                                    <h3><a target="_blank" href="http://www.easternecho.com/">The Easten Echo</a></h3>
-                                    <p>Eastern Michigan University Student Newspaper</p>
-                                </figcaption>
-                            </figure>
-                            <img alt="Eastern Echo" src="img/sites/emu.jpg">
-                        </div>
-                    </div>
-                </div>
-                <hr>
-
-                <!-- third row -->
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="site">
-                            <figure class="site-hover">
-                                <figcaption class="box">
-                                    <h3><a target="_blank" href="http://www.dailyillini.com/">The Daily Illini</a></h3>
-                                    <p>University of Illinois Student Newspaper</p>
-                                </figcaption>
-                            </figure>     
-                            <img alt="Daily Illini" src="img/sites/illinois.jpg">
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="site">
-                            <figure class="site-hover">
-                                <figcaption class="box">
-                                    <h3><a target="_blank" href="http://www.dailytarheel.com/">The Daily Tar Heel</a></h3>
-                                    <p>University of North Carolina Student Newspaper</p>
-                                </figcaption>
-                            </figure>
-                            <img alt="Daily Tar Heel" src="img/sites/unc.jpg">
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="site">
-                            <figure class="site-hover">
-                                <figcaption class="box">
-                                    <h3><a target="_blank" href="http://www.34st.com/">34th St Magazine</a></h3>
-                                    <p>University of Pennsylvania Student Magazine</p>
-                                </figcaption>
-                            </figure>  
-                            <img alt="34th St Magazine" src="img/sites/penn34.jpg">
-                        </div>
-                    </div>
-
-                </div>
-                <hr>
             </div>
         </section>
 
@@ -389,11 +553,13 @@
             </div>
         </footer>
         
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script type ="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script type ="text/javascript" src="js/main.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+        <!--<script type ="text/javascript" src="js/bootstrap.js"></script>-->
 
         <!-- Google Analytics -->
         <script>
