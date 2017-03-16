@@ -41,18 +41,27 @@
     background-size: 1200px;
     background-position: 50% 40px;
     min-height: 500px; }
+  #top #about .intro {
+    padding: 0 0 40px 0; }
+  #top #about h2 {
+    font-size: 48px;
+    padding-bottom: 40px; }
   #top #about .about-row {
     display: block;
-    padding: 40px 0; }
+    padding: 0 0 40px 0; }
     #top #about .about-row .visible-xs {
       display: inline-block !important; }
     #top #about .about-row h4 {
       text-align: center;
       font-weight: normal;
       letter-spacing: 4px;
-      font-size: 32px; }
+      font-size: 28px; }
       #top #about .about-row h4 .fa {
         font-size: 32px; }
+  #top #about .resume {
+    font-size: 24px; }
+    #top #about .resume .fa {
+      font-size: 24px; }
   #top #web-work .web-work-item {
     width: auto;
     min-height: 280px;
@@ -77,17 +86,26 @@
   #top #web-work .web-work-modal {
     padding: 0; }
     #top #web-work .web-work-modal-inner {
-      padding: 0 1em; }
+      padding: 0 1em;
+      display: block;
+      overflow: auto;
+      height: 100%; }
+    #top #web-work .web-work-modal-close {
+      width: 50px;
+      height: 50px; }
     #top #web-work .web-work-modal h4 {
       font-size: 40px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      margin-top: 50px; }
     #top #web-work .web-work-modal h5 {
       font-size: 24px;
       margin-bottom: 20px; }
     #top #web-work .web-work-modal p {
       margin-bottom: 20px; }
     #top #web-work .web-work-modal a {
-      width: 100%; }
+      width: 100%;
+      margin-top: 40px;
+      margin-bottom: 40px; }
   #top #timeline .timeline dl:before {
     left: 60px; }
   #top #timeline .timeline dl dt {
@@ -121,7 +139,8 @@
   #top #topImage {
     background-size: 1200px;
     background-position: 50% 25px;
-    min-height: 425px; }
+    min-height: 425px;
+    height: 100vh; }
   #top ul.social li {
     padding-right: 20px; }
     #top ul.social li .fa {
@@ -283,6 +302,10 @@ body {
       color: #7fffd0;
       text-decoration: none; }
     .navbar .navbar-logo:focus {
+      color: #ffffff;
+      background: none;
+      text-decoration: none; }
+    .navbar .navbar-logo:active {
       color: #ffffff;
       background: none;
       text-decoration: none; }
@@ -469,7 +492,8 @@ body {
   border-radius: 4px;
   padding: 1em 0;
   margin: 80px auto;
-  width: 320px;
+  width: 100%;
+  max-width: 320px;
   display: block;
   transition: all 200ms ease-in-out; }
   .about .resume:hover {
@@ -576,6 +600,7 @@ body {
       text-align: center;
       border-radius: 4px;
       width: 50%;
+      display: block;
       padding: 20px;
       color: #ffffff;
       background-color: #000000;

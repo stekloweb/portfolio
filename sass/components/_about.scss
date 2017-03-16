@@ -97,7 +97,8 @@
         border-radius: 4px;
         padding: 1em 0;
         margin: 80px auto;
-        width: 320px;
+        width: 100%;
+        max-width: 320px;
         display: block;
         transition: all $hover-transition;
 

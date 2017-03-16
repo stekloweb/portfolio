@@ -32,6 +32,12 @@
             text-decoration: none;
         }
 
+        &:active {
+            color: $white;
+            background: none;
+            text-decoration: none;
+        }
+
         #lastName {
             font-weight: 900;
         }
