@@ -10,13 +10,14 @@ body {
         border: none;
     }
 
-    .spacer1 {
-        padding: 20px 0;
-        margin: 0;
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
-    .spacer2 {
-        padding: 40px 0;
+    .spacer {
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     a {
