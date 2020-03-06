@@ -398,8 +398,8 @@ body {
     background-color: #f0f0f0; }
   body #topImage {
     min-height: 700px;
-    background: url("../img/portfolio-photo3.jpg") no-repeat fixed;
-    background-position: 50% 20px;
+    background: url("../img/primary.jpg") no-repeat fixed;
+    background-position: 50% -40px;
     background-size: cover;
     position: relative; }
 
